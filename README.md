@@ -1,4 +1,4 @@
-# fast_bot_www_aimbooster_com
+# Fast bot for www.aimbooster.com
 Source code for aimbooster.com - 1000x faster than others (Python+C+numexpr)
 
 Inspired by Kian Brose's great tutorial  https://github.com/KianBrose/Image-Recognition-Botting-Tutorial , 
