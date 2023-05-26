@@ -33,34 +33,3 @@ if __name__ == "__main__":
             as screenshots_region:
         _ = list((None for shot in screenshots_region
                   if main(shot)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-while True:
-    if not ativo:
-        continue
-    with mss.mss() as sct:
-        shot = np.array(sct.grab(sct.monitors[1]))
-        shot = shot[c[1]:c[3], c[0]:c[2]]
-        shot = cv2.cvtColor(
-            shot, cv2.COLOR_RGBA2RGB
-        )
-        colfound = search_colors(
-            pic=shot,
-            colors=[colors]
-        )
-        coo=np.where(np.abs(
-            np.diff(colfound[..., 0],
-            prepend=0)) > 30)[0]
-        [mkey.left_click_xy(x+c[0],y+c[1], delay=0.05)
-         for x,y in colfound[coo]]
