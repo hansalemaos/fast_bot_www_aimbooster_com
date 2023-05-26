@@ -1,5 +1,5 @@
 # Fast bot for www.aimbooster.com
-Source code for aimbooster.com - 1000x faster than others (Python+C+numexpr+ctypes)
+Bot for aimbooster.com - source code - 1000x faster than others (Python+C+numexpr+ctypes)
 
 Inspired by Kian Brose's great tutorial  https://github.com/KianBrose/Image-Recognition-Botting-Tutorial , 
 I added some C, ctypes and NumPy/numexpr to make it faster. 
